@@ -75,6 +75,8 @@ nav ul li a:hover {
 	color: #D93A2B;
 
 }
+
+
 /*div section {
 	display: flex;
 	display: inline-block;
@@ -174,11 +176,6 @@ footer p {
 	
 
 }
-
-.gradiente{
- background-image: linear-gradient(to left, rgba(217, 187, 169, .6) , black);
-}
-
 
 
 .promociones-cositas__section{
@@ -391,3 +388,54 @@ footer p {
 }
 
 
+/*animaciones*/
+
+.gradiente{
+ background-image: linear-gradient(to left, rgba(217, 187, 169, .6) , black);
+}
+
+
+
+
+.transform:hover{
+	transform: translateX(15px);
+	cursor: pointer;
+}
+
+.transformY:hover{
+	transform: translateY(20px);
+	cursor: pointer;
+}
+
+.transformY-:hover{
+	transform: translateY(-20px);
+	cursor: pointer;
+}
+
+
+.transformlogo:hover{
+	transform: rotateZ(-360deg);
+	cursor: pointer;
+	transition: transform 2s;
+}
+
+.scale:hover{
+transform: scale(2);
+cursor: pointer;
+transition: 0.5s;
+}
+
+@keyframes animateD{
+	0%{background-color: rgba(217, 187, 169, 1); width: 100%;}
+	50%{background-color: darkgray; width:100%;}
+	100%{background-color: rgba(217, 58, 43, 0.8); width: 100%;}
+
+}
+
+.animate{
+animation-name: animateD;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-delay: 0;
+
+}
